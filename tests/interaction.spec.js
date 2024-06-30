@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test')
 
 test('test js interaction', async ({ page }) => {
-  await page.goto('http://127.0.0.1:5500/html/contact.html')
+  await page.goto('contact.html')
 
 
   const person = page.locator('#person2')
