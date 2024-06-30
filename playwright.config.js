@@ -23,6 +23,13 @@ module.exports = defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'Pixel 5',
+      use: { 
+        ...devices['Pixel 5'],
+        viewport: { width: devices['Pixel 5'].viewport.width, height: 1200 }
+      },
     }
   ],
 
