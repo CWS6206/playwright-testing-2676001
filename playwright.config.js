@@ -21,7 +21,7 @@ module.exports = defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
     trace: 'on-first-retry',
   },
-  timeout: 30000,
+  timeout: 3000,
   projects: [
     {
       name: 'chromium',
