@@ -1,12 +1,12 @@
-const { test, expect } = require('@playwright/test');
-const AxeBuilder = require('@axe-core/playwright').default;
+const { test, expect } = require('@playwright/test')
+const AxeBuilder = require('@axe-core/playwright').default
 
 test.describe('homepage', () => {
   test('should not have any automatically detectable accessibility issues', async ({ page }) => {
-    await page.goto('index.html');
+    await page.goto('index.html')
 
-    const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
+    const accessibilityScanResults = await new AxeBuilder({ page }).analyze()
 
-    expect(accessibilityScanResults.violations).toEqual([]);
-  });
-});
+    expect(accessibilityScanResults.violations).toEqual([])
+  })
+})

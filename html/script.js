@@ -9,6 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.forEach((value, key) => data[key] = value);
 
         alert("Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir werden uns in Kürze bei Ihnen melden.")
-
     });
 });
