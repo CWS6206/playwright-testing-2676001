@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beispielwebseite</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1, footer{
+            margin-top: 1rem;
+        }
+        section{
+            cursor: pointer;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            margin: 1rem 0;
+
+            p{
+                display: none;
+            }
+        }
+        section.active{
+            background-color: #f0f0f0;
+
+            p{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Kontakt</h1>
+        <section id="person1" class="active">
+            <h2>Frank</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+        <section id="person2">
+            <h2>Franziska</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+        <section id="person3">
+            <h2>Franzi</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Beispielunternehmen</p>
+    </footer>
+    <script>
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.addEventListener('click', () => {
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+               section.classList.add('active');
+            });
+        });
+    </script>
+
+
+</body>
+</html>
