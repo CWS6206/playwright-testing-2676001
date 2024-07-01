@@ -1,0 +1,18 @@
+{
+  "name": "lil",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.9"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "dotenv": "^16.4.5"
+  }
+}
