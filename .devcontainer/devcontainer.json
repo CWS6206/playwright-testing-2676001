@@ -3,7 +3,7 @@
 {
 	"name": "Node",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
+	"image": "mcr.microsoft.com/playwright:v1.36.0-jammy",
 	"customizations": {
 		"vscode": {
 			"extensions": [
